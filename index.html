@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="VAISHNAVI MANDEM — B.Tech CSE Student & Developer | Aspiring Forward Deployed Engineer">
+<title>VAISHNAVI MANDEM — Portfolio</title>
+<style>
+:root{
+ --bg:#05060b;--panel:rgba(255,255,255,.055);--panel2:rgba(255,255,255,.08);
+ --text:#f7f8ff;--muted:#a8aec2;--line:rgba(255,255,255,.12);
+ --a:#9b8cff;--b:#45dcff;--good:#7df0c5;--max:1180px;
+}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}
+body{background:
+ radial-gradient(900px 500px at 5% 0%,rgba(155,140,255,.17),transparent 60%),
+ radial-gradient(800px 500px at 95% 15%,rgba(69,220,255,.12),transparent 58%),
+ var(--bg);color:var(--text);font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}.wrap{width:min(var(--max),92%);margin:auto}
+nav{position:fixed;z-index:100;top:16px;left:50%;transform:translateX(-50%);width:min(1100px,92%);
+display:flex;align-items:center;justify-content:space-between;padding:12px 16px;border:1px solid var(--line);
+background:rgba(5,6,11,.72);backdrop-filter:blur(20px);border-radius:18px}
+.brand{font-weight:900;letter-spacing:1.5px}.brand i{color:var(--b);font-style:normal}
+.nav{display:flex;gap:20px;color:var(--muted);font-size:.86rem}.nav a:hover{color:#fff}
+.menu{display:none;border:0;background:none;color:#fff;font-size:1.4rem}
+.hero{min-height:100vh;padding:150px 0 90px;display:grid;align-items:center}
+.heroGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:center}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:2.5px;color:var(--b);font-weight:800}
+h1{font-size:clamp(3.3rem,7vw,7rem);line-height:.9;letter-spacing:-5px;margin:18px 0}
+.grad{background:linear-gradient(110deg,#fff,var(--b),var(--a));color:transparent;background-clip:text;-webkit-background-clip:text}
+.hero h2{font-size:clamp(1.15rem,2.5vw,1.65rem);font-weight:650;color:#dfe3f3}
+.heroLead{max-width:720px;color:var(--muted);font-size:1.05rem;margin:18px 0}
+.actions{display:flex;flex-wrap:wrap;gap:11px;margin-top:24px}.btn{display:inline-flex;align-items:center;justify-content:center;
+padding:11px 16px;border-radius:12px;border:1px solid var(--line);font-weight:750;transition:.25s}
+.btn:hover{transform:translateY(-3px);border-color:rgba(69,220,255,.45)}.primary{border:0;background:linear-gradient(135deg,var(--a),#6355e8)}
+.badge{display:inline-flex;gap:8px;align-items:center;margin-top:18px;color:#c8cde0;font-size:.82rem}.dot{width:8px;height:8px;border-radius:50%;background:var(--good);box-shadow:0 0 15px var(--good)}
+.heroVisual{width:min(390px,78vw);aspect-ratio:1;border-radius:50%;margin:auto;display:grid;place-items:center;
+border:1px solid var(--line);background:radial-gradient(circle,rgba(155,140,255,.2),transparent 55%);position:relative;box-shadow:0 0 100px rgba(155,140,255,.12)}
+.heroVisual:before,.heroVisual:after{content:"";position:absolute;border:1px solid rgba(69,220,255,.35);border-radius:50%;inset:10%;transform:rotate(25deg)}
+.heroVisual:after{inset:25%;border-color:rgba(155,140,255,.45);transform:rotate(-35deg)}
+.core{text-align:center;z-index:1}.core strong{font-size:5rem;line-height:1}.core span{display:block;color:var(--muted);font-size:.72rem;letter-spacing:3px;margin-top:8px}
+section{padding:95px 0}.head{margin-bottom:34px}.head h2{font-size:clamp(2rem,4vw,3.2rem);letter-spacing:-1.8px;margin-top:5px}.head p{color:var(--muted);max-width:760px;margin-top:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:26px;backdrop-filter:blur(14px);box-shadow:0 20px 70px rgba(0,0,0,.22)}
+.card h3{font-size:1.2rem}.muted{color:var(--muted)}.aboutText{margin-top:12px;color:var(--muted)}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:20px}.fact{padding:15px;border:1px solid var(--line);border-radius:14px;text-align:center}.fact b{display:block;font-size:1.35rem}.fact small{color:var(--muted)}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.skill h3{margin-bottom:12px}.tags{display:flex;flex-wrap:wrap;gap:7px}.tag{font-size:.78rem;padding:6px 9px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.06);border-radius:9px;color:#cdd2e2}
+.projects{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.project{min-height:250px;display:flex;flex-direction:column}
+.num{font-size:.72rem;color:var(--b);font-weight:900;letter-spacing:2px}.project h3{margin:8px 0;font-size:1.3rem}.project p{color:var(--muted);flex:1}.projectLinks{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}.mini{font-size:.78rem;padding:7px 10px;border:1px solid var(--line);border-radius:9px}.mini:hover{border-color:var(--b)}
+.edu{display:grid;grid-template-columns:1fr auto;gap:20px;align-items:center}.edu .degree{font-size:1.45rem;font-weight:800}.edu a{color:var(--b)}
+.certGrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.cert{position:relative;overflow:hidden}.cert .label{color:var(--b);font-size:.72rem;font-weight:850;letter-spacing:1.5px;text-transform:uppercase}.cert p{color:var(--muted);margin-top:7px;font-size:.9rem}.cert .status{display:inline-block;margin-top:15px;padding:5px 8px;border-radius:8px;background:rgba(125,240,197,.08);color:var(--good);font-size:.72rem}
+.timeline{display:grid;gap:13px}.item{display:grid;grid-template-columns:110px 1fr;gap:18px}.item time{color:var(--b);font-weight:850}.item p{color:var(--muted);margin-top:4px}
+.resume{display:flex;align-items:center;justify-content:space-between;gap:25px}.resume p{color:var(--muted);max-width:750px;margin-top:8px}
+.contact{display:grid;grid-template-columns:.8fr 1.2fr;gap:16px}.contactLinks{display:grid;gap:10px}.contactLink{padding:17px}.contactLink small{display:block;color:var(--muted);margin-bottom:2px}
+form{display:grid;gap:11px}input,textarea{width:100%;border:1px solid var(--line);background:rgba(0,0,0,.22);color:#fff;padding:13px;border-radius:11px;font:inherit;outline:none}textarea{min-height:140px;resize:vertical}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:.84rem}.foot{display:flex;justify-content:space-between;gap:15px}
+.reveal{opacity:0;transform:translateY(18px);transition:.7s}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.heroGrid,.grid2,.contact{grid-template-columns:1fr}.heroVisual{margin-top:15px}.skills{grid-template-columns:repeat(2,1fr)}.certGrid{grid-template-columns:1fr 1fr}.resume{display:block}.resume .btn{margin-top:18px}}
+@media(max-width:680px){.nav{display:none}.menu{display:block}.nav.open{display:flex;position:absolute;left:0;right:0;top:62px;flex-direction:column;padding:16px;background:#090b14;border:1px solid var(--line);border-radius:14px}.hero{padding-top:125px}.hero h1{letter-spacing:-3px}.projects,.certGrid,.skills{grid-template-columns:1fr}.facts{grid-template-columns:1fr}.item{grid-template-columns:1fr;gap:3px}.edu{grid-template-columns:1fr}.foot{display:block}}
+</style>
+</head>
+<body>
+<nav>
+<a class="brand" href="#home">VAISHNAVI<i>.</i></a>
+<div class="nav" id="nav">
+<a href="#about">About</a><a href="#education">Education</a><a href="#skills">Skills</a><a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+</div><button class="menu" id="menu" aria-label="Menu">☰</button>
+</nav>
+
+<header class="hero" id="home">
+<div class="wrap heroGrid">
+<div>
+<div class="eyebrow">B.Tech CSE Student & Developer</div>
+<h1>VAISHNAVI<br><span class="grad">MANDEM</span></h1>
+<h2>Aspiring Forward Deployed Engineer (FDE)</h2>
+<p class="heroLead"><b>TURNING IDEAS INTO REAL-WORLD SOLUTIONS.</b><br>
+I’m a Computer Science student who enjoys building practical applications with AI, automation, APIs and modern developer tools — while continuously learning how technology can solve real user problems.</p>
+<div class="actions"><a class="btn primary" href="#projects">Explore My Work ↗</a><a class="btn" href="#contact">Connect With Me</a><a class="btn" href="https://github.com/VenkyVyshu656" target="_blank">GitHub ↗</a></div>
+<div class="badge"><span class="dot"></span> Open to learning, internships & developer opportunities</div>
+</div>
+<div class="heroVisual"><div class="core"><strong>AI</strong><span>BUILD • INTEGRATE • DEPLOY</span></div></div>
+</div>
+</header>
+
+<section id="about"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">01 / About Me</div><h2>Curious. Practical. Always building.</h2></div>
+<div class="grid2">
+<div class="card"><h3>Who I am</h3><p class="aboutText">I am <b>Vaishnavi Mandem</b>, a B.Tech Computer Science & Engineering student and developer. I’m interested in AI-powered applications, automation, APIs, cloud fundamentals and solving practical problems through technology.</p><p class="aboutText">My long-term career direction is <b>Forward Deployed Engineering</b> — combining software engineering with problem understanding, rapid prototyping, integrations and communication.</p></div>
+<div class="card"><h3>What I’m building toward</h3><p class="aboutText">I’m strengthening my programming and engineering fundamentals while creating projects, participating in technical activities and learning modern AI/developer workflows.</p><div class="facts"><div class="fact"><b>AI</b><small>Applications</small></div><div class="fact"><b>API</b><small>Integrations</small></div><div class="fact"><b>FDE</b><small>Career Focus</small></div></div></div>
+</div></div></section>
+
+<section id="education"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">02 / Education</div><h2>Academic foundation.</h2></div>
+<div class="card edu"><div><div class="degree">B.Tech — Computer Science & Engineering</div><p class="muted">Sri Sai Institute of Technology and Science (Autonomous), Rayachoti</p><p class="muted">Annamayya District, Andhra Pradesh • India</p></div><a href="https://www.ssits.ac.in/" target="_blank">Institution ↗</a></div>
+</div></section>
+
+<section id="skills"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">03 / Skills</div><h2>My technical toolkit.</h2><p>Skills represented as areas I’m learning and applying through coursework, projects and hands-on practice.</p></div>
+<div class="skills">
+<div class="card skill"><h3>Programming</h3><div class="tags"><span class="tag">Java</span><span class="tag">Python</span><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Data Structures</span><span class="tag">OOP</span></div></div>
+<div class="card skill"><h3>AI & Automation</h3><div class="tags"><span class="tag">Generative AI</span><span class="tag">Prompt Engineering</span><span class="tag">AI Assistants</span><span class="tag">Automation</span><span class="tag">Google AI Studio</span></div></div>
+<div class="card skill"><h3>APIs & Development</h3><div class="tags"><span class="tag">REST APIs</span><span class="tag">Web Integration</span><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Rapid Prototyping</span></div></div>
+<div class="card skill"><h3>Cloud & Tools</h3><div class="tags"><span class="tag">AWS</span><span class="tag">Cloud Fundamentals</span><span class="tag">VS Code</span><span class="tag">AI Coding Tools</span></div></div>
+</div></div></section>
+
+<section id="projects"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">04 / Projects</div><h2>Real ideas, built into projects.</h2><p>Selected projects and technical experiments from my development journey.</p></div>
+<div class="projects">
+<article class="card project"><span class="num">PROJECT 01</span><h3>Student Smart Doubt Clarifications</h3><p>AI-powered learning assistant concept for helping students clarify academic doubts and interact with educational content.</p><div class="projectLinks"><a class="mini" href="https://conceptconnect.ai.studio" target="_blank">Live Demo ↗</a><a class="mini" href="https://github.com/VenkyVyshu656" target="_blank">GitHub ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 02</span><h3>Aegis AI — Personal Safety Assistant</h3><p>AI-powered emergency-assistance concept focused on personal safety workflows and quick support.</p><div class="projectLinks"><a class="mini" href="https://aegis-ai-personal-safety-emergency-assistant.ai.studio/" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 03</span><h3>SkillSpark AI</h3><p>AI-assisted learning and skill-development project exploring personalized digital support.</p><div class="projectLinks"><a class="mini" href="https://skillspark-ai.ai.studio/" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 04</span><h3>AI Automotive Repair Assistant</h3><p>AI-assisted automotive troubleshooting concept for understanding vehicle repair and maintenance issues.</p><div class="projectLinks"><a class="mini" href="https://ai-automotive-repair-dhnp.bolt.host" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 05</span><h3>Legal Rights AI Assistant</h3><p>Conversational AI concept designed to make legal-rights information easier to explore and understand.</p><div class="projectLinks"><a class="mini" href="https://legal-rights-ai-assi-jvyi.bolt.host" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 06</span><h3>Green Harvest</h3><p>Digital project exploring technology-supported ideas for agriculture and sustainable farming use cases.</p><div class="projectLinks"><a class="mini" href="https://green-harvest-387209886175.asia-southeast1.run.app/" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 07</span><h3>Career Guide for Students</h3><p>Student-focused career guidance concept for exploring opportunities, skills and career directions.</p><div class="projectLinks"><a class="mini" href="https://career-guide-for-students-608433555913.asia-southeast1.run.app/" target="_blank">Live Demo ↗</a></div></article>
+<article class="card project"><span class="num">PROJECT 08</span><h3>Math Magicians</h3><p>Educational technical presentation exploring Mathematics, Artificial Intelligence and Supercomputers.</p><div class="projectLinks"><a class="mini" href="https://aimersociety.com/IQ-Labs/index.html" target="_blank">View Project ↗</a></div></article>
+</div></div></section>
+
+<section id="certifications"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">05 / Certifications</div><h2>Learning beyond the classroom.</h2><p>A curated certification area for the credentials I’ve earned through cloud, AI, developer and community learning.</p></div>
+<div class="certGrid">
+<div class="card cert"><span class="label">Recent</span><h3>Digital Edge 101</h3><p>Recent digital-skills learning credential added to my professional learning journey.</p><span class="status">Credential earned</span></div>
+<div class="card cert"><span class="label">Cloud</span><h3>AWS Learning</h3><p>Cloud and AWS-focused learning credentials and course achievements.</p><span class="status">Credential earned</span></div>
+<div class="card cert"><span class="label">AI</span><h3>AI & Prompt Engineering</h3><p>Learning focused on generative AI, prompting and practical AI workflows.</p><span class="status">Credential earned</span></div>
+<div class="card cert"><span class="label">Developer</span><h3>Developer & Technical Learning</h3><p>Programming, development and technical skill-building credentials.</p><span class="status">Credential earned</span></div>
+<div class="card cert"><span class="label">Community</span><h3>GDG / Technical Programs</h3><p>Participation and learning through developer communities and technical programs.</p><span class="status">Credential / participation</span></div>
+<div class="card cert"><span class="label">Career</span><h3>Internships & Professional Programs</h3><p>Internship, webinar and career-development credentials and participation records.</p><span class="status">Portfolio record</span></div>
+</div></div></section>
+
+<section id="journey"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">06 / Journey</div><h2>Learning, building, improving.</h2></div>
+<div class="timeline">
+<div class="card item"><time>2026</time><div><h3>B.Tech CSE — Student Developer</h3><p>Strengthening programming, software-development and problem-solving fundamentals while building practical projects.</p></div></div>
+<div class="card item"><time>2026</time><div><h3>AI & Application Projects</h3><p>Built and explored multiple AI-assisted applications using modern rapid-development and AI tools.</p></div></div>
+<div class="card item"><time>2026 →</time><div><h3>FDE Learning Path</h3><p>Growing toward Forward Deployed Engineering through software engineering, APIs, cloud, AI systems, debugging, communication and customer-focused problem solving.</p></div></div>
+</div></div></section>
+
+<section id="achievements"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">07 / Achievements & Participation</div><h2>Beyond academics.</h2></div>
+<div class="grid2">
+<div class="card"><h3>Achievements</h3><p class="aboutText">Project building, technical presentations, innovation-focused activities and continuous certification-based learning.</p></div>
+<div class="card"><h3>Participation</h3><p class="aboutText">Workshops, webinars, developer communities, technical programs, hackathon/problem-solving activities and student innovation events.</p></div>
+</div></div></section>
+
+<section><div class="wrap reveal">
+<div class="card resume"><div><div class="eyebrow">08 / Resume</div><h2>One place for my professional profile.</h2><p>My portfolio highlights my education, projects, skills, certifications and career direction.</p></div><a class="btn primary" href="#contact">Contact Me ↗</a></div>
+</div></section>
+
+<section id="contact"><div class="wrap reveal">
+<div class="head"><div class="eyebrow">09 / Contact</div><h2>Let’s connect.</h2><p>For internships, developer opportunities, technical collaborations or meaningful projects.</p></div>
+<div class="contact">
+<div class="contactLinks">
+<a class="card contactLink" href="https://github.com/VenkyVyshu656" target="_blank"><small>GitHub</small><b>github.com/VenkyVyshu656 ↗</b></a>
+<a class="card contactLink" href="https://www.linkedin.com/in/vaishnavi-mandem-1206473a7/" target="_blank"><small>LinkedIn</small><b>Vaishnavi Mandem ↗</b></a>
+<a class="card contactLink" href="https://www.ssits.ac.in/" target="_blank"><small>Institution</small><b>SSITS, Rayachoti ↗</b></a>
+</div>
+<div class="card"><form id="contactForm"><input id="name" required placeholder="Your name"><input id="email" required type="email" placeholder="Your email"><textarea id="message" required placeholder="Your message"></textarea><button class="btn primary" type="submit">Send Message ↗</button></form></div>
+</div></div></section>
+
+<footer><div class="wrap foot"><span>© 2026 VAISHNAVI MANDEM</span><span>B.Tech CSE Student • Developer • Aspiring FDE</span></div></footer>
+
+<script>
+const menu=document.getElementById('menu'),nav=document.getElementById('nav');
+menu.addEventListener('click',()=>nav.classList.toggle('open'));
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>nav.classList.remove('open')));
+const obs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(x=>obs.observe(x));
+document.getElementById('contactForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ const n=document.getElementById('name').value,em=document.getElementById('email').value,m=document.getElementById('message').value;
+ const body=`Name: ${n}\nEmail: ${em}\n\n${m}`;
+ window.location.href='mailto:?subject='+encodeURIComponent('Portfolio enquiry from '+n)+'&body='+encodeURIComponent(body);
+});
+</script>
+</body>
+</html>

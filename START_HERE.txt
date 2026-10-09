@@ -1,0 +1,20 @@
+VAISHNAVI MANDEM — FINAL PORTFOLIO
+
+Open index.html to view the portfolio.
+
+Included:
+- VAISHNAVI MANDEM branding
+- B.Tech CSE Student & Developer
+- Aspiring Forward Deployed Engineer (FDE)
+- Sri Sai Institute of Technology and Science (Autonomous), Rayachoti
+- GitHub and LinkedIn links
+- 8 project links
+- Skills
+- Certifications section including Digital Edge 101 and other learning areas
+- Separate Achievements and Participation
+- Responsive mobile/laptop design
+- Animated futuristic glassmorphism UI
+- Contact form
+- Institution link
+
+The portfolio intentionally does not invent a personal email address or certificate credential URLs that were not supplied. The contact form opens the visitor's email client; the recipient can be added later when a real email address is provided.
